@@ -60,27 +60,33 @@ const logValuesTimes3 = (nums) => {
 };
 
 const logWordsWithExclamation = (words) => {
-  
+  words.forEach(word => {
+    const wordWithExclamation = `${word}!`;
+    console.log(wordWithExclamation)
+  })
 };
 
 // Map
 
-const arrayValuesSquaredTimesIndex = () => {
-  //
+const arrayValuesSquaredTimesIndex = (nums) => {
+  let squaredTimesIndex = nums.map((num, index) => num ** 2 * index);
+  return squaredTimesIndex;
 };
 
-const arrayWordsUpcased = () => {
-  //
+const arrayWordsUpcased = (words) => {
+  let upcasedWords = words.map(word => word.toUpperCase());
+  return upcasedWords
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (nums) => {
+  let isDivisible = nums.some(num => num % 7 === 0);
+  return isDivisible;
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (words) => {
+return words.some(word => word.toLowerCase().includes('a'));
 };
 
 module.exports = {
