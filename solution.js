@@ -1,52 +1,66 @@
 const { nums, words } = require("./data/data.js");
 
 // Every
-const isEveryNumGreaterThan2 = () => {
-  //
+const isEveryNumGreaterThan2 = (nums) => {
+ return nums.every(num => num > 2)
+ //checks if every element is greater than 2
+ // the function returns result of every method
 };
 
-const isEveryWordShorterThan7 = () => {
+const isEveryWordShorterThan7 = (words) => {
+  let wordsShorterThan7 = words.every(word => word.length<=7)
+return wordsShorterThan7  
   //
 };
 
 // Filter
 
-const arrayLessThan5 = () => {
-  //
+const arrayLessThan5 = (nums) => {
+  let resultArray = nums.filter(num => num < 5);
+  return resultArray;
 };
 
-const arrayOddLengthWords = () => {
+const arrayOddLengthWords = (words) => {
+  let oddLengthWords = words.filter(word => word.length % 2 !== 0);
+  return oddLengthWords;
   //
 };
 
 // Find
 
-const firstValDivisibleBy4 = () => {
-  //
+const firstValDivisibleBy4 = (nums) => {
+  let result = nums.find(num => num % 4 === 0)
+  return result;
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (words) => {
+  let result= words.find(word => word.length > 4);
+  return result;
 };
 
 // Find Index
 
-const firstNumIndexDivisibleBy3 = () => {
-  //
+const firstNumIndexDivisibleBy3 = (nums) => {
+  let resultIndex = nums.findIndex(num => num % 3 === 0);
+  return resultIndex;
 };
 
-const firstWordIndexLessThan2Char = () => {
-  //
+const firstWordIndexLessThan2Char = (words) => {
+  let resultIndex = words.findIndex(word => word.length < 2);
+  return resultIndex;
 };
 
 // For Each
 
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (nums) => {
+  nums.forEach(num => {
+    const multipledValue = num * 3;
+    console.log(multipledValue);
+  });
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (words) => {
+  
 };
 
 // Map
