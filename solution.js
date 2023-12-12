@@ -80,7 +80,7 @@ const areSomeNumsDivisibleBy7 = (nums) => {
 
 const doSomeWordsHaveAnA = (words) => {
   let wordsWithA = words.some(word => word.includes('a'))
-  return wordsWithA
+  return wordsWithA;
 };
 
 module.exports = {
