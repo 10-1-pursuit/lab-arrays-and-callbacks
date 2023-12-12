@@ -67,7 +67,8 @@ const logValuesTimes3 = () => {
 
 // console.log each word with an exclamation point at the end of it
 const logWordsWithExclamation = () => {
-  //
+  words.forEach((word) => {});
+  console.log();
 };
 
 // Thought Questions: What happened to the original array?  |  Can you store the values from a forEach method in a new array?
