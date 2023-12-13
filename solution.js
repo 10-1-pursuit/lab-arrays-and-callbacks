@@ -63,17 +63,18 @@ const firstWordIndexLessThan2Char = (words) => {
 // For Each
 
 const logValuesTimes3 = (nums) => {
-  const valueTimesThree = nums.forEach((num) => {
-    return num * 3;
+  nums.forEach((num) => {
+    const valueTimesThree = num * 3;
+    console.log(valueTimesThree);
   });
-  return valueTimesThree;
 };
 
+// Example 2: Log words with exclamation
 const logWordsWithExclamation = (words) => {
-  const emphasizedWords = words.forEach((word) => {
-    return `${word}!`;
+  words.forEach((word) => {
+    const emphasizedWord = `${word}!`;
+    console.log(emphasizedWord);
   });
-  return emphasizedWords;
 };
 
 // Map
