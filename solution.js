@@ -67,34 +67,42 @@ const logValuesTimes3 = () => {
 
 // console.log each word with an exclamation point at the end of it
 const logWordsWithExclamation = () => {
-  words.forEach((word) => {});
-  console.log();
+  words.forEach((word) => {
+    let exclamedWord = word + "!";
+    console.log(exclamedWord);
+  });
 };
-
+console.log(words);
 // Thought Questions: What happened to the original array?  |  Can you store the values from a forEach method in a new array?
 
 // Map
 // Make a new array of each number squared and then multiplied by their index number
 const arrayValuesSquaredTimesIndex = () => {
-  //
+  return nums.map((num, index) => {
+    let squaredTimesIndex = num ** 2 * index;
+    return squaredTimesIndex;
+  });
 };
 
 // Make a new array of all the words in all uppercase
 const arrayWordsUpcased = () => {
-  //
+  return words.map((word) => {
+    return word.toUpperCase();
+  });
 };
+console.log(arrayWordsUpcased());
 
 // Thought Questions: What happened to the original array? | Can you store the values from a map method in a new array?
 
 // Some
 // Find out if some numbers are divisible by 7
 const areSomeNumsDivisibleBy7 = () => {
-  //
+  return nums.some((num) => num % 7 === 0);
 };
 
 // Find out if some words have the letter a in them
 const doSomeWordsHaveAnA = () => {
-  //
+  return words.some((word) => word.indexOf("a") !== -1);
 };
 
 module.exports = {
