@@ -39,16 +39,20 @@ const arrayOddLengthWords = (str) => {
 
 
 // Find - Find the first value divisible by 4
-const firstValDivisibleBy4 = () => {
-  //
+const firstValDivisibleBy4 = (numbers) => {
+  console.log(numbers)
+  return numbers.find(num => num % 4 === 0)
 };
+
+// console.log(firstValDivisibleBy4(nums))
 
 // Find the first word that is longer than 4 characters
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (str) => {
+  console.log(str)
+  return str.find(word => word.length > 4)
 };
 
-console.log(firstWordLongerThan4Char(words))
+// console.log(firstWordLongerThan4Char(words))
 
 // Find Index - Find the index of the first number that is divisible by 3
 const firstNumIndexDivisibleBy3 = () => {
