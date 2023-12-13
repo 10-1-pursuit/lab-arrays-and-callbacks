@@ -73,7 +73,9 @@ const logWordsWithExclamation = () => {
   });
 };
 console.log(words);
-// Thought Questions: What happened to the original array?  |  Can you store the values from a forEach method in a new array?
+// Thought Questions:
+//=======> What happened to the original array?   ====> I'm assuming by original array, you mean nums|words. If so, they remained unchanged.
+//=======> Can you store the values from a forEach method in a new array?   ====> Not unless you try to capture them via a console.log. You cannot return values from the forEach() method.
 
 // Map
 // Make a new array of each number squared and then multiplied by their index number
@@ -92,7 +94,9 @@ const arrayWordsUpcased = () => {
 };
 console.log(arrayWordsUpcased());
 
-// Thought Questions: What happened to the original array? | Can you store the values from a map method in a new array?
+// Thought Questions:
+//=======> What happened to the original array?  ==> Nothing, .map() is a non-mutating method that creates a new array.
+//=======> Can you store the values from a map method in a new array?  ===> Yes, I like the .push method for this.
 
 // Some
 // Find out if some numbers are divisible by 7
