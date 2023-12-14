@@ -7,7 +7,7 @@ const isEveryNumGreaterThan2 = (numbers) => {
   return numbers.every((num) => num >= 2);
 };
 
-// console.log(isEveryNumGreaterThan2(nums));
+console.log(isEveryNumGreaterThan2(nums));
 
 // Determine if every word is shorter than 7 characters
 const isEveryWordShorterThan7 = (theWords) => {
@@ -16,7 +16,7 @@ const isEveryWordShorterThan7 = (theWords) => {
   return theWords.every(isShorterThanSeven);
 };
 
-// console.log(isEveryWordShorterThan7(words));
+console.log(isEveryWordShorterThan7(words));
 
 // Filter - Filter the array for numbers less than 5
 const arrayLessThan5 = (numbers) => {
@@ -25,7 +25,7 @@ const arrayLessThan5 = (numbers) => {
   return result;
 };
 
-// console.log(arrayLessThan5(nums))
+console.log(arrayLessThan5(nums))
 
 // Filter words that have an odd length
 const arrayOddLengthWords = (str) => {
@@ -34,7 +34,7 @@ const arrayOddLengthWords = (str) => {
   return result;
 };
 
-// console.log(arrayOddLengthWords(words))
+console.log(arrayOddLengthWords(words))
 
 // Find - Find the first value divisible by 4
 const firstValDivisibleBy4 = (numbers) => {
@@ -42,7 +42,7 @@ const firstValDivisibleBy4 = (numbers) => {
   return numbers.find((num) => num % 4 === 0);
 };
 
-// console.log(firstValDivisibleBy4(nums))
+console.log(firstValDivisibleBy4(nums))
 
 // Find the first word that is longer than 4 characters
 const firstWordLongerThan4Char = (str) => {
@@ -50,7 +50,7 @@ const firstWordLongerThan4Char = (str) => {
   return str.find((word) => word.length > 4);
 };
 
-// console.log(firstWordLongerThan4Char(words))
+console.log(firstWordLongerThan4Char(words))
 
 // Find Index - Find the index of the first number that is divisible by 3
 const firstNumIndexDivisibleBy3 = (numbers) => {
@@ -58,14 +58,14 @@ const firstNumIndexDivisibleBy3 = (numbers) => {
   return numbers.findIndex((num) => num % 3 === 0);
 };
 
-// console.log(firstNumIndexDivisibleBy3(nums))
+console.log(firstNumIndexDivisibleBy3(nums))
 
 // Find the index of the first word that is less than 2 characters long
 const firstWordIndexLessThan2Char = (str) => {
   return str.findIndex((word) => word.length < 2);
 };
 
-// console.log(firstWordIndexLessThan2Char(words))
+console.log(firstWordIndexLessThan2Char(words))
 
 // For Each - Console.log each value of the nums array multiplied by 3
 const logValuesTimes3 = (numbers) => {
@@ -75,7 +75,7 @@ const logValuesTimes3 = (numbers) => {
   console.log(numbers);
 };
 
-// console.log(logValuesTimes3(nums))
+console.log(logValuesTimes3(nums))
 
 // Console.log each word with an exclamation point at the end of it
 const logWordsWithExclamation = (str) => {
@@ -84,7 +84,7 @@ const logWordsWithExclamation = (str) => {
   });
 };
 
-// console.log(logWordsWithExclamation(words))
+console.log(logWordsWithExclamation(words))
 
 // Map - Make a new array of each number squared and then multiplied by their index number
 const arrayValuesSquaredTimesIndex = (numbers) => {
@@ -94,7 +94,7 @@ const arrayValuesSquaredTimesIndex = (numbers) => {
   return mappedNums;
 };
 
-// console.log(arrayValuesSquaredTimesIndex(nums));
+console.log(arrayValuesSquaredTimesIndex(nums));
 
 // Make a new array of all the words in all uppercase
 const arrayWordsUpcased = (str) => {
@@ -104,18 +104,23 @@ const arrayWordsUpcased = (str) => {
   return upperCaseWords;
 };
 
-// console.log(arrayWordsUpcased(words))
+console.log(arrayWordsUpcased(words))
 
 // Some - Find out if some numbers are divisible by 7
-
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (numbers) => {
+  return numbers.some(num => num % 7 === 0);
 };
+
+console.log(areSomeNumsDivisibleBy7(nums))
 
 // Find out if some words have the letter a in them
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (str) => {
+  return str.some((word) => {
+    return word.includes('a')
+  })
 };
+
+console.log(doSomeWordsHaveAnA(words))
 
 module.exports = {
   isEveryNumGreaterThan2,
