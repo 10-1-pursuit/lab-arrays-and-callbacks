@@ -1,9 +1,10 @@
 const { nums, words } = require("./data/data.js");
 
 // Every
-const isEveryNumGreaterThan2 = (nums) => nums.every > 2;
+const isEveryNumGreaterThan2 = (nums) => nums.every((num) => num > 2);
 
-const isEveryWordShorterThan7 = (words) => words.every.length < 7;
+const isEveryWordShorterThan7 = (words) =>
+  words.every((word) => word.length < 7);
 
 // Filter
 
@@ -29,9 +30,10 @@ const firstWordIndexLessThan2Char = (words) =>
 
 // For Each
 
-const logValuesTimes3 = (nums) => nums.forEach((num) => num * 3);
+const logValuesTimes3 = (nums) => nums.forEach((num) => console.log(num * 3));
 
-const logWordsWithExclamation = (words) => words.forEach((word) => word + "!");
+const logWordsWithExclamation = (words) =>
+  words.forEach((word) => console.log(word + "!"));
 
 // Map
 
