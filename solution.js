@@ -67,18 +67,27 @@ const firstWordIndexLessThan2Char = (str) => {
   return str.findIndex(word => word.length < 2);
 };
 
-console.log(firstWordIndexLessThan2Char(words))
+// console.log(firstWordIndexLessThan2Char(words))
 
 
 // For Each - Console.log each value of the nums array multiplied by 3
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (numbers) => {
+  numbers.forEach((num, index, array) => {
+    array[index] = num * 3
+  })
+  console.log(numbers)
 };
 
+// console.log(logValuesTimes3(nums))
+
 // Console.log each word with an exclamation point at the end of it
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (str) => {
+  str.forEach((word)=>{
+    console.log(`${word}!`)
+  })
 };
+
+// console.log(logWordsWithExclamation(words))
 
 // Map - Make a new array of each number squared and then multiplied by their index number
 const arrayValuesSquaredTimesIndex = () => {
