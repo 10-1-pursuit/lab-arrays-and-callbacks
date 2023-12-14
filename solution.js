@@ -55,14 +55,20 @@ const firstWordLongerThan4Char = (str) => {
 // console.log(firstWordLongerThan4Char(words))
 
 // Find Index - Find the index of the first number that is divisible by 3
-const firstNumIndexDivisibleBy3 = () => {
-  //
+const firstNumIndexDivisibleBy3 = (numbers) => {
+  console.log(numbers)
+  return numbers.findIndex(num => num % 3 === 0);
 };
 
+// console.log(firstNumIndexDivisibleBy3(nums))
+
 // Find the index of the first word that is less than 2 characters long
-const firstWordIndexLessThan2Char = () => {
-  //
+const firstWordIndexLessThan2Char = (str) => {
+  return str.findIndex(word => word.length < 2);
 };
+
+console.log(firstWordIndexLessThan2Char(words))
+
 
 // For Each - Console.log each value of the nums array multiplied by 3
 const logValuesTimes3 = () => {
