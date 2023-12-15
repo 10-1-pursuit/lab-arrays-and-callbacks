@@ -6,7 +6,7 @@ const isEveryNumGreaterThan2 = () => {
 
 
 return nums.every((element) => {
-   return element.length > 2
+   return element > 2
 
 })
 
@@ -76,12 +76,12 @@ const firstWordIndexLessThan2Char = () => {
 
 const logValuesTimes3 = () => {
   //
-  return nums.forEach(element => element * 3);
+  nums.forEach(element => console.log(element * 3));
 };
 
 const logWordsWithExclamation = () => {
 
-  return words.forEach(element => element === '!');
+   words.forEach(element => console.log(`${element}!`));
   //
 };
 
